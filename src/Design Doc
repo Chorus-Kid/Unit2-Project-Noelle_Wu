@@ -1,0 +1,49 @@
+LinearEquations class:
+instance variables:
+private int x1 - first x coordinate
+private int y1 - first y coordinate
+private int x2 - second x coordinate
+private int y2 - second y coordinate
+private double x3 - third x coordinate for later shhhhhh
+
+Constructor public LinearEquation (firstX, firstY, secondX, secondY) {
+x1 = firstX
+y1 = firstY
+x2 = secondX
+y2 = secondY
+}
+
+methods
+public double slope( firstX, firstY, secondX, secondY)
+this method will calculate the slope
+{
+double slope = (secondY - firstY) / (secondX - firstX)
+return slope
+}
+
+public double y-intercept( firstX, firstY, secondX, secondY)
+this method will calculate the y-intercept
+{
+return y-intercept
+}
+
+public String equation(slope, y-intercept)
+this method will return everything needed in a linear equation
+{
+return equation
+}
+
+public String secret coordinate (x3)
+this method will print out the secret coordinate using the same equation given the third x coordinate the user typed in
+{
+return secretCoordinate
+}
+
+public String 
+
+EquationRunner.Java:
+Step 1: Welcome!
+Step 2: Ask user to input first coordinate point
+Step 3: Ask user to input second coordinate point
+Step 4: ?????
+Step 5: Profit
