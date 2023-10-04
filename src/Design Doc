@@ -1,3 +1,4 @@
+(insert importing math class thing here)
 LinearEquations class:
 instance variables:
 private int x1 - first x coordinate
@@ -15,35 +16,32 @@ y2 = secondY
 
 methods
 public double slope( firstX, firstY, secondX, secondY)
-this method will calculate the slope
-{
-double slope = (secondY - firstY) / (secondX - firstX)
-return slope
-}
+this method will calculate and return the slope
 
-public double y-intercept( firstX, firstY, secondX, secondY)
-this method will calculate the y-intercept
-{
-return y-intercept
-}
 
-public String equation(slope, y-intercept)
+public double yIntercept( firstX, firstY, secondX, secondY)
+this method will calculate and return the y-intercept
+
+
+public String equation(firstX, firstY, secondX, secondY)
 this method will return everything needed in a linear equation
-{
-return equation
-}
 
-public String secret coordinate (x3)
+
+public double distance(firstX, firstY, secondX, secondY)
+this method will return the distance between the two points to the nearest hundredth
+
+
+public String secret coordinate (x3, firstX, firstY, secondX, secondY)
 this method will print out the secret coordinate using the same equation given the third x coordinate the user typed in
-{
-return secretCoordinate
-}
 
-public String 
+public String toString()
+this method will print out the two coordinate pairs, the slope, the y intercept, the linear equation of the two lines, and the distance between the two points
 
 EquationRunner.Java:
 Step 1: Welcome!
 Step 2: Ask user to input first coordinate point
 Step 3: Ask user to input second coordinate point
-Step 4: ?????
-Step 5: Profit
+Step 4: Do all necessary calculations in the background
+Step 5: toString everything
+Step 6: Ask user for 3rd x coordinate
+Step 7:
