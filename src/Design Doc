@@ -1,37 +1,41 @@
 (insert importing math class thing here)
 LinearEquations class:
 instance variables:
-private int x1 - first x coordinate
-private int y1 - first y coordinate
-private int x2 - second x coordinate
-private int y2 - second y coordinate
+private int firstX - first x coordinate
+private int firstY - first y coordinate
+private int secondX - second x coordinate
+private int secondY - second y coordinate
 private double x3 - third x coordinate for later shhhhhh
 
-Constructor public LinearEquation (firstX, firstY, secondX, secondY) {
-x1 = firstX
-y1 = firstY
-x2 = secondX
-y2 = secondY
+Constructors
+public LinearEquation (x1, y1, x2, y2) {
+firstX = x1
+firstY = y1
+secondX = x2
+secondY = y2
 }
 
+public Shhhhh (x3) {
+ x3 = thirdX
+}
 methods
-public double slope( firstX, firstY, secondX, secondY)
+public double slope()
 this method will calculate and return the slope
 
 
-public double yIntercept( firstX, firstY, secondX, secondY)
+public double yIntercept()
 this method will calculate and return the y-intercept
 
 
-public String equation(firstX, firstY, secondX, secondY)
+public String equation()
 this method will return everything needed in a linear equation
 
 
-public double distance(firstX, firstY, secondX, secondY)
+public double distance()
 this method will return the distance between the two points to the nearest hundredth
 
 
-public String secret coordinate (x3, firstX, firstY, secondX, secondY)
+public String secret coordinate ()
 this method will print out the secret coordinate using the same equation given the third x coordinate the user typed in
 
 public String toString()
