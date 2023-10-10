@@ -14,8 +14,15 @@ public class LinearEquation {
         secondY = y2;
     }
 
+    public LinearEquation(int x1, int y1, int x2, int y2, double thirdX){
+        firstX = x1;
+        firstY = y1;
+        secondX = x2;
+        secondY = y2;
+        x3 = thirdX;
+    }
     public double slope(){
-        double slope =  ((secondY - firstY) / (secondX - firstX));
+        double slope =  (double) (secondY - firstY) / (secondX - firstX);
         return slope;
     }
 
@@ -30,7 +37,7 @@ public class LinearEquation {
 
     public String equation()
     {
-        double slopeInFormula = slope();
+        String slopeInFormula = (secondY - firstY) + "/" + (secondX - firstX);
         double yInterceptInFormula = yIntercept();
         String equation = ("y = " + slopeInFormula + "x + " + yInterceptInFormula);
         return equation;
@@ -55,7 +62,7 @@ public class LinearEquation {
         return everything;
     }
 
-    public String secretCoordinate ()
+    public String secretCoordinate()
     {
         double slope = slope();
         double yIntercept = yIntercept();

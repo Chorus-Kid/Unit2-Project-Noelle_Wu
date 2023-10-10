@@ -17,12 +17,13 @@ public class EquationRunner {
         String Y2 = secondCoordinate.substring((secondCoordinate.indexOf(comma)) + 1, (secondCoordinate.length() - 1));
         int secondY = Integer.parseInt(Y2);
         LinearEquation quation = new LinearEquation(firstX, firstY, secondX, secondY);
-        quation.toString();
+        System.out.println(quation.toString());
         System.out.println("Ohoho? What is this?");
         System.out.println("A secret function????");
-        System.out.println("(Type in a third x-value, could be a decimal this time): ");
-        String thirdXValue = s.nextLine();
-        int x3 = Integer.parseInt(thirdXValue);
-        quation.secretCoordinate();
+        System.out.println("(Type out a third x coordinate for the computer to process): ");
+        String x3 = s.nextLine();
+        double thirdX = Double.parseDouble(x3);
+        LinearEquation quassont = new LinearEquation(firstX, firstY, secondX, secondY, thirdX);
+        System.out.println("Hmm yes hmm your coordinate is: " + quassont.secretCoordinate());
     }
 }
